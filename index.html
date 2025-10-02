@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RSA Token Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="token-box">
+    <h2> RSA Token Validater</h2>
+   <div class="rsa"> <div id="code" class="code">------</div></div>
+    <div id="timer" class="timer">Next code in: 60s</div>
+    <br>
+    <div class="input-group">
+      <div class="password-container">
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+        <button type="button" id="showPasswordBtn" onclick="togglePassword()">👁️</button>
+      </div>
+      <input type="text" id="verifyInput" placeholder="Enter RSA token">
+      <button onclick="verifyToken()">Verify</button>
+    </div>
+    <p id="verifyResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
